@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Website for Techy Software</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://mulesoftd8.www.msit.io/sites/default/files/2020-10/logo-nexus-nero.png" alt="Your Logo">
+            </a>
+        </div>
+        <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-us-section">About Us</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#contact-us-section">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- main section -->
+    <div class="topper-section" id="home-section">
+        <img src="https://nexusinfo.in/assets/images/Bg-2.png" alt="Topper Image">
+        <div class="topper-content">
+            <h1>Welcome to Nexus</h1>
+            <p>imagination is the beginning of creation.</p>
+            <a href="#contact-us-section" class="btn">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div class="about-us-section reveal fade-bottom" id="about-us-section">
+        <div class="about-us-content">
+            <h1>About Us</h1>
+            <p>Our story and mission go here. Additional information about who we are and what we do.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <img src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/4ZrVLdVKeijzurndz/people-work-and-corporate-concept-business-team-with-folders-walking-along-office-building-and-talking_h2pyxdff_thumbnail-1080_01.png"alt="About Us Image">
+    </div>
+
+    <!-- services -->
+    <section class="services-container reveal fade-left" id="services-section">
+        <h2>Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="https://wallpaperaccess.com/full/1393565.jpg" alt="Consultation">
+                <h3>Consultation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse repellat error vitae id? Accusamus, enim! Iure cum similique facilis.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://lh5.googleusercontent.com/Q32xiQEWOa18cH6XjKS8N1hlvANhZrSRhcjg_PO77Ef6HNMb85YSSV9NkQUhZ7RR7fhiIb3pKsedxOQS3ceSgo2C5MRhefOEwEadXfCv8mwFg2pc7MiVmAXlRHBQtezDaCIIczVo" alt="Documentation / Bank Process">
+                <h3>Documentation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias, praesentium dolorem libero tenetur inventore?</p>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn.elearningindustry.com/wp-content/uploads/2014/10/List-of-Corporate-Learning-Management-Systems.jpg" alt="Legal Systems">
+                <h3>Legal Systems</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolore asperiores obcaecati. Voluptates aliquid molestias assumenda consequuntur unde.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://th.bing.com/th/id/R.d092f38b7cf82620a6905a7b7670f98f?rik=TF4OySvq8JbsuA&riu=http%3a%2f%2frcbc.com%2fuploads%2fmedia%2fshutterstock_1466791640-Desktop-2.jpg&ehk=ZDbZAUQ8q4nQ82F8TE9OO6hb3A5qN2Andm1m6BKSB2I%3d&risl=&pid=ImgRaw&r=0" alt="Disbursal">
+                <h3>Disbursal</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolore asperiores obcaecati. Voluptates aliquid molestias assumenda consequuntur unde.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://businesspartnermagazine.com/wp-content/uploads/2020/12/The-4-Best-Proprietary-Trading-Courses.jpg" alt="Trading">
+                <h3>Trading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolore asperiores obcaecati. Voluptates aliquid molestias assumenda consequuntur unde.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://th.bing.com/th/id/OIP.acS57m70yTN-gd7fxe99xQHaEo?rs=1&pid=ImgDetMain" alt="Finance">
+                <h3>Finance</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad dolore asperiores obcaecati. Voluptates aliquid molestias assumenda consequuntur unde.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="contact-us-section reveal fade-right" id="contact-us-section">
+        <h2>Contact Us</h2>
+        <h4>Drop us a line through the form below and we'll get back to you</h4>
+        <form name="submit-to-google-sheet">
+            <input type="text" name="fname" id="fname" placeholder="First Name*" autocomplete="off" required>
+            <input type="text" name="lname" id="lname" placeholder="Last Name*" autocomplete="off" required>
+            <input type="email" name="email" id="email" placeholder="Email address*" autocomplete="off" required>
+            <textarea name="text" id="text" rows="5" placeholder="Please tell us a bit about your query*" required></textarea>
+            <p>*It may take sometime to send the request. Kindly wait after click the send button.</p>
+            <div>
+                <button type="submit" class="btn2">Send</button>
+            </div>
+        </form>
+        <p id="confirmationMessage" style="display: none; color: green;">Form submitted! Thank you for reaching out.</p>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#home-section">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about-us-section">About Us</a></li>
+            <li class="menu__item"><a class="menu__link" href="#services-section">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contact-us-section">Contact Us</a></li>
+        </ul>
+        <p>&copy;2024 Vinayak R | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Smooth scrolling script
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFVr_KDXwjlKBDZouju1A5wwdLDPyuznaa_CnsoTMdRulfzxluEJEUQz8jldSwFjVHrw/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+              console.log('Success!', response);
+              // Reset the form after successful submission (if needed)
+              form.reset();
+              // Show confirmation message (if needed)
+              const confirm = document.getElementById('confirmationMessage')
+              confirm.style.display = 'block';
+              confirm.style.textAlign = 'center'
+              setTimeout(function() {
+                document.getElementById('confirmationMessage').style.display = 'none';
+              }, 3000);
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
